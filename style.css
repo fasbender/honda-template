@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+.header, .vespa{
+    background-color: #264653;
+}
+.container{
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+.logo{
+    width: 6rem;
+    z-index: 1;
+}
+.logo img{
+    width: 100%;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+.nav li{
+    list-style: none;
+}
+.nav li:nth-child(5){
+    margin-left: 3.5rem;
+    font-weight: bold;
+}
+.nav a{
+    text-decoration: none;
+    color: aliceblue;
+    letter-spacing: 2px;
+}
+.button{
+    background-color: #e76f51;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.toggle{
+    width: 2rem;
+    cursor: pointer;
+    display: none;
+}
+.toggle img{
+    width: 100%;
+}
+
+.title h1{
+    margin: 20px 0;
+}
+.banner{
+    width: 50%;
+}
+.banner img{
+    width: 100%;
+}
+.title{
+    width: 50%;
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+.title a{
+    text-decoration: none;
+    color: aliceblue;
+    margin: 10px 0;
+    display: block;
+    width: 5rem;
+    font-weight: bold;
+}
+
+.featured-container{
+    flex-direction: column;
+}
+.featured-title{
+    text-align: center;
+}
+.featured-title h1{
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+.featured-title p{
+    color: #e76f51;
+    font-weight: bold;
+}
+.bike{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: 30px 0;
+}
+.bike img{
+    width: 25%;
+}
+
+.news-container{
+    flex-direction: column;
+}
+.card-container{
+    width: 20%;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 5px;
+}
+.card-img{
+    width: 100%;
+}
+.card-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+.card-button a{
+    display: block;
+    width: 5rem;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    box-shadow: none;
+}
+.card{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0;
+}
+.card-title{
+    margin: 3px 0;
+}
+.news-title h1{
+    font-size: 2rem;
+}
+
+.client-container{
+    flex-direction: column;
+}
+.client-card{
+    text-align: center;
+}
+.client-card-container{
+    border: 1px solid silver;
+    width: 15%;
+}
+.client-img img{
+    width: 6rem;
+    border-radius: 50%;
+}
+.card-body, .card-footer{
+    margin: 10px 0;
+}
+.card-footer span{
+    color: rgb(74, 74, 243);
+}
+.fa-star{
+    color: orange;
+}
+
+.question-container{
+    flex-direction: column;
+}
+.kind img{
+    width: 80%;
+}
+.question-content{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 30px 0;
+}
+.question-title div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid silver;
+    padding: 10px;
+}
+.question-title div:nth-child(1){
+    border-bottom: none;
+}
+.question-title div:nth-child(3){
+    border-top: none;
+}
+.question-title{
+    width: 30rem;
+}
+
+.video-container{
+    flex-direction: column;
+}
+.video-title{
+    text-align: center;
+}
+.video-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1200px;
+    margin: 0 auto;
+}
+.video-grid div{
+    margin: 5px;
+    text-align: center;
+    border: 1px solid silver;
+}
+
+.latest-container{
+    flex-direction: column;
+}
+.latest-img{
+    width: 60%;
+}
+.latest-img img{
+    width: 100%;
+    border-radius: 25px;
+}
+.latest-title h1{
+    margin: 1rem auto;
+}
+
+.footer-container{
+    display: flex;
+    max-width: 1600px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 2rem;
+}
+.latest-title{
+    display: flex;
+    justify-content: flex-start;
+    width: 25rem;
+}
+.latest-title li{
+    list-style: none;
+    margin-left: 20px;
+}
+.latest-title li:nth-child(1){
+    margin-left: 0;
+}
+.license div{
+    margin: 10px 0;
+    color: aliceblue;
+}
+.footer{
+    background-color: #212529;
+}
+.download div{
+    color: #e76f51;
+}
+
+@media screen and (max-width: 1024px) {
+    #navbar{
+        display: none;
+    }
+    #navbar-active{
+        position: absolute;
+        flex-direction: column;
+        justify-content: space-evenly;
+        min-height: 100vh;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #264653;
+    }
+    .nav li:nth-child(5){
+        margin-left: 0;
+    }
+    .toggle{
+        display: block;
+        z-index: 1;
+    }
+
+    .section-container{
+        flex-direction: column;
+    }
+    .banner{
+        width: 100%;
+    }
+    .title{
+        width: 100%;
+    }
+
+    .bike img{
+        width: 30%;
+    }
+
+    .card{
+        flex-wrap: wrap;
+    }
+    .card-container{
+        width: 45%;
+        margin: 10px 0;
+    }
+    .video-grid{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card-container{
+        width: 100%;
+    }
+    .question-content{
+        flex-wrap: wrap;
+    }
+    .footer-container{
+        flex-wrap: wrap;
+    }
+    .latest-title{
+        width: 100%;
+    }
+    .latest-title li{
+        margin-left: 10px;
+    }
+}
+
